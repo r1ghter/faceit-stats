@@ -1,0 +1,103 @@
+/* WEB BODY */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: transparent;
+}
+
+/* MAIN CONTAINER */
+.stats-container {
+    background-color: rgba(0, 0, 0, 0.5); /* BLACK TRANSPARENT BACKGROUND */
+    color: white;
+    padding: 8px; /* VYSKA */
+    border-radius: 0 0 0 8px; /* LEVY SPODNI ROH RADIUS */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 320px; /* SIRKA */
+    max-width: 90%; /* MAX SIRKA PRO RESPONSIVITU */
+    height: auto; /* AUTOMATICKA VYSKA NA ZAKLADE OBSAHU */
+}
+
+/* RADEK STATISTIK */
+.stats-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%; /* FULL SIRKA DO CONTAINERU */
+}
+
+/* STATS CSS */
+.stat {
+    margin: 6px; /* MEZERA KOLEM STATISTIK */
+    flex: 1; /* FLEX SIRKA */
+    text-align: center; /* TEXT UVNITR */
+}
+
+/* NADPISY */
+.stat strong {
+    font-size: 10px;
+    font-weight: 700;
+}
+
+/* ICON ELO CONTAINER */
+.level-elo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* HORIZONTALNI CENTR */
+}
+
+/* LEVEL ICON */
+#level-icon {
+    width: 25px;
+    height: 25px;
+    margin-bottom: 2px; /* MEZERA IKONA - TEXT */
+}
+
+/* ELO CONTAINER */
+.elo-container {
+    display: flex;
+    align-items: center; /* VERTIKALNI CENTR */
+    justify-content: center; /* HORIZONTALNI CENTR */
+    margin-top: 4px; 
+    font-weight: bold;
+}
+
+/* ELO DATA */
+.elo-container span {
+    font-size: 12px; 
+    margin-right: 2px;
+}
+
+/* ELO TEXT */
+.elo-container strong {
+    font-size: 12px;
+    margin-left: 2px;
+}
+
+/* DATA */
+.data {
+    font-size: 14px;
+    margin-top: 2px;
+}
+
+/* ELO TEXT SIZE */
+#elo-change {
+    font-size: 14px;
+}
+
+/* ELO DO PLUSU */
+#elo-change.positive {
+    color: green;
+}
+
+/* ELO DO MINUSU */
+#elo-change.negative {
+    color: red;
+}
